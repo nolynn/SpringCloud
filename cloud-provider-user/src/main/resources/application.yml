@@ -1,0 +1,23 @@
+server:
+  port: 8001
+
+#客户端注册进eureka服务列表中
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+    instance-id: cloud-provider-user:8001
+    prefer-ip-address: true
+    metadata-map:
+      my-metadata: zhangkai
+spring:
+  application:
+    name: cloud-provider-user
+
+info:
+  app.name: cloud-provider-user
+  author: lynn
+  build.artifactId: $project.artifactId$F
+  build.version: $project.version$

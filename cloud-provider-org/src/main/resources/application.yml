@@ -1,0 +1,29 @@
+server:
+  port: 7001
+#  eureka整合
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+    instance-id: cloud-provider-org:7001
+    prefer-ip-address: true
+# mybatis配置文件开启
+mybatis:
+  config-location:
+
+
+
+# spring整合
+spring:
+  application:
+    name: cloud-provider-org
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/assets
+    username: root
+    password: root
+
+

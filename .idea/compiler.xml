@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud-common" />
+        <module name="cloud-eureka" />
+        <module name="cloud-eureka-user" />
+        <module name="cloud-provider-org" />
+        <module name="cloud-provider-user" />
+        <module name="cloud-ribbon" />
+        <module name="cloudapi" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="cloud-api" target="1.8" />
+      <module name="cloud-common" target="1.8" />
+      <module name="cloud-config" target="1.8" />
+      <module name="cloud-eureka" target="1.8" />
+      <module name="cloud-eureka-user" target="1.8" />
+      <module name="cloud-eureka-user (1)" target="1.8" />
+      <module name="cloud-provider-org" target="1.8" />
+      <module name="cloud-provider-org (1)" target="1.8" />
+      <module name="cloud-provider-user" target="1.8" />
+      <module name="cloud-ribbon" target="1.8" />
+      <module name="cloudapi" target="1.5" />
+      <module name="springCloud" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

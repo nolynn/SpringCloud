@@ -1,0 +1,12 @@
+server:
+  port: 8761
+
+#eureka服务端的实例名称
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defautZone: http://${eureka.instance.hostname}:${server.port}/eureka/
