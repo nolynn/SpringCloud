@@ -8,6 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-common" />
         <module name="cloud-eureka" />
+        <module name="cloud-eureka (1)" />
+        <module name="cloud-eureka-8672" />
+        <module name="cloud-eureka-8673" />
+        <module name="cloud-eureka-8762" />
+        <module name="cloud-eureka-8763" />
         <module name="cloud-eureka-user" />
         <module name="cloud-provider-org" />
         <module name="cloud-provider-user" />
@@ -20,6 +25,11 @@
       <module name="cloud-common" target="1.8" />
       <module name="cloud-config" target="1.8" />
       <module name="cloud-eureka" target="1.8" />
+      <module name="cloud-eureka (1)" target="1.8" />
+      <module name="cloud-eureka-8672" target="1.8" />
+      <module name="cloud-eureka-8673" target="1.8" />
+      <module name="cloud-eureka-8762" target="1.8" />
+      <module name="cloud-eureka-8763" target="1.8" />
       <module name="cloud-eureka-user" target="1.8" />
       <module name="cloud-eureka-user (1)" target="1.8" />
       <module name="cloud-provider-org" target="1.8" />

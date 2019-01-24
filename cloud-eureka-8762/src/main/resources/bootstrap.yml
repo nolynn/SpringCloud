@@ -1,0 +1,7 @@
+#注册中心的用户名和密码
+#security:
+#    basic:
+#      enabled: true
+#    user:
+#      name: root
+#      password: root
