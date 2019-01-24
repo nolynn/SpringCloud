@@ -8,5 +8,6 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
+    #这里采用service-url 或者 seviceUrl都可以
     service-url:
       defaultZone: http://eureka8761.com:8761/eureka/,http://eureka8763.com:8763/eureka/

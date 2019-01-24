@@ -8,5 +8,5 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
-    service-url:
-      defautZone: http://eureka8762.com:8762/eureka/,http://eureka8761.com:8761/eureka/
+    serviceUrl:
+      defaultZone: http://eureka8762.com:8762/eureka/,http://eureka8761.com:8761/eureka/
