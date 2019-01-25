@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 import java.io.Serializable;
 
@@ -14,6 +15,7 @@ import java.io.Serializable;
 @Data
 @JsonIgnoreProperties("log")
 @ApiModel(value = "BaseResponse", description = "返回值基类")
+@Accessors(chain = true)
 public class BaseResponse<T> implements Serializable {
     @ApiModelProperty(value = "是否成功：true 成功, false 失败", name = "success", example = "true")
     private boolean success;

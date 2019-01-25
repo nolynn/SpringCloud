@@ -1,6 +1,8 @@
 package com.bbd.pm.org.controller;
 
 import com.bbd.pm.common.entities.BaseResponse;
+import com.bbd.pm.common.entities.user.User;
+import com.bbd.pm.org.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
@@ -25,6 +27,9 @@ public class OrganController {
     @Autowired
     DiscoveryClient discoveryClient;
 
+    @Autowired
+    UserService userService;
+
     @GetMapping("/user/{id}")
     public BaseResponse findById(@PathVariable String id) {
         System.out.println(this.restTemplate.getForObject("http://localhost:8001/form/" + id, BaseResponse.class));
@@ -34,5 +39,34 @@ public class OrganController {
     @GetMapping("/userInstance")
     public List<ServiceInstance> showInfo() {
         return this.discoveryClient.getInstances("cloud-provider-user");
+    }
+
+    @GetMapping("/user/detail/{id}")
+    public BaseResponse<User> detail(@PathVariable String id) {
+        BaseResponse<User> result = new BaseResponse<>();
+        try {
+            User user = userService.findById(id);
+            result.setSuccess(true);
+            result.setData(user);
+            result.setTotalCount(1);
+        } catch (Exception ex) {
+            result.setSuccess(false);
+            result.setErrMsg(ex.getMessage());
+            ex.printStackTrace();
+        }
+        return result;
+    }
+
+    @GetMapping("/user/list")
+    public BaseResponse<User> list() {
+        BaseResponse result = new BaseResponse<>();
+        try {
+            List<User> list = userService.findAll();
+            result.setSuccess(true).setData(list).setTotalCount(1);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            result.setSuccess(false).setLogAndErrMsg(ex.getMessage());
+        }
+        return result;
     }
 }
