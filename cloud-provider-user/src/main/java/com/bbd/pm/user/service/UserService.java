@@ -1,7 +1,6 @@
-package com.bbd.pm.org.service;
+package com.bbd.pm.user.service;
 
 import com.bbd.pm.common.entities.user.User;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -11,7 +10,7 @@ import java.util.List;
  * @Auther: lynn
  */
 public interface UserService {
-    boolean addUser(User dept);
+    void addUser(User dept);
 
     User findById(String id);
 

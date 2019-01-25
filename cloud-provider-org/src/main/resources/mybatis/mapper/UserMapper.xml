@@ -10,7 +10,7 @@
     <select id="findAll" resultType="com.bbd.pm.common.entities.user.User">
         select id,real_name,user_name,password from `user`;
     </select>
-    <insert id="addDept" parameterType="com.bbd.pm.common.entities.user.User">
+    <insert id="addUser" parameterType="com.bbd.pm.common.entities.user.User">
         INSERT INTO `user`(id,real_name,user_name,password) VALUES(#{id},#{realName},#{userName},#{password});
     </insert>
 

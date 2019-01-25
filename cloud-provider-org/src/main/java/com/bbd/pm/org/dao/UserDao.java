@@ -7,7 +7,7 @@ import java.util.List;
 
 @Mapper
 public interface UserDao {
-    boolean addDept(User dept);
+    boolean addUser(User dept);
 
     User findById(String id);
 

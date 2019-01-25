@@ -1,8 +1,8 @@
-package com.bbd.pm.org.service.impl;
+package com.bbd.pm.user.service.impl;
 
 import com.bbd.pm.common.entities.user.User;
-import com.bbd.pm.org.dao.UserDao;
-import com.bbd.pm.org.service.UserService;
+import com.bbd.pm.user.dao.UserRepository;
+import com.bbd.pm.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,20 +19,20 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    UserDao userDao;
+    UserRepository userRepository;
 
     @Override
-    public boolean addUser(User user) {
-        return userDao.addUser(user);
+    public void addUser(User user) {
+        userRepository.addUser(user);
     }
 
     @Override
     public User findById(String id) {
-        return userDao.findById(id);
+        return userRepository.findById(id);
     }
 
     @Override
     public List<User> findAll() {
-        return userDao.findAll();
+        return userRepository.findAll();
     }
 }
