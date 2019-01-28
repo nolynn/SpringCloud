@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/cloud-common/cloud-common.iml" filepath="$PROJECT_DIR$/cloud-common/cloud-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-consumer-user-80/cloud-consumer-user-80.iml" filepath="$PROJECT_DIR$/cloud-consumer-user-80/cloud-consumer-user-80.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-eureka/cloud-eureka.iml" filepath="$PROJECT_DIR$/cloud-eureka/cloud-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-eureka-8762/cloud-eureka-8762.iml" filepath="$PROJECT_DIR$/cloud-eureka-8762/cloud-eureka-8762.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-eureka-8763/cloud-eureka-8763.iml" filepath="$PROJECT_DIR$/cloud-eureka-8763/cloud-eureka-8763.iml" />

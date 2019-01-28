@@ -17,6 +17,7 @@
         <module>cloud-provider-org</module>
         <module>cloud-ribbon</module>
         <module>cloud-common</module>
+        <module>cloud-consumer-user-80</module>
     </modules>
 
     <properties>
