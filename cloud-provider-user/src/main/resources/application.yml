@@ -18,7 +18,7 @@ spring:
     name: cloud-provider-user
   datasource:
     url: jdbc:mysql://localhost:3306/microuser
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
     username: root
     password: root
