@@ -9,12 +9,15 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-eureka-8672/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-eureka-8673/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-provider-user-8002/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-provider-user-8003/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/cloud-api/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-config/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-ribbon/pom.xml" />
       </set>
     </option>
   </component>

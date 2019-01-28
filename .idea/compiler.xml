@@ -17,7 +17,9 @@
         <module name="cloud-eureka-user" />
         <module name="cloud-provider-org" />
         <module name="cloud-provider-user" />
-        <module name="cloud-ribbon" />
+        <module name="cloud-provider-user-8002" />
+        <module name="cloud-provider-user-8002 (1)" />
+        <module name="cloud-provider-user-8003" />
         <module name="cloudapi" />
       </profile>
     </annotationProcessing>
@@ -37,6 +39,9 @@
       <module name="cloud-provider-org" target="1.8" />
       <module name="cloud-provider-org (1)" target="1.8" />
       <module name="cloud-provider-user" target="1.8" />
+      <module name="cloud-provider-user-8002" target="1.8" />
+      <module name="cloud-provider-user-8002 (1)" target="1.8" />
+      <module name="cloud-provider-user-8003" target="1.8" />
       <module name="cloud-ribbon" target="1.8" />
       <module name="cloudapi" target="1.5" />
       <module name="springCloud" target="1.8" />

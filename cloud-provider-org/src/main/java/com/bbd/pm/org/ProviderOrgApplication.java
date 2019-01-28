@@ -20,11 +20,4 @@ public class ProviderOrgApplication {
         SpringApplication.run(ProviderOrgApplication.class);
     }
 
-    @Value("${server.port}")
-    String port;
-
-    @RequestMapping("/")
-    public String home() {
-        return "hello world eureka port:" + port;
-    }
 }

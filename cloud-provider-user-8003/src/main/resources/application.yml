@@ -1,0 +1,29 @@
+server:
+  port: 8003
+
+#客户端注册进eureka服务列表中
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka8761.com:8761/eureka/,http://eureka8762.com:8762/eureka/,http://eureka8763.com:8763/eureka/
+  instance:
+    hostname: localhost
+    instance-id: cloud-provider-user:8003
+    prefer-ip-address: true
+    metadata-map:
+      my-metadata: zhangkai
+# spring整合
+spring:
+  application:
+    name: cloud-provider-user
+  datasource:
+    url: jdbc:mysql://localhost:3306/microuser
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: root
+info:
+  app.name: cloud-provider-user
+  author: lynn
+  build.artifactId: $project.artifactId$F
+  build.version: $project.version$
