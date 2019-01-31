@@ -2,15 +2,21 @@ findById
 ===
 *通过id查找用户
 
-    SELECT id,real_name,user_name,password FROM user WHERE id=#id#
+    SELECT id,real_name,user_name,password FROM user WHERE id=#id#  
 
+sql
+===
+id,real_name,user_name,password
 
 findAll
 ===
 *查找所有用户
 
+    @var sql1 = "id,real_name,user_name,password";
     SELECT 
     @pageTag(){
-        id,real_name,user_name,password
+        #db.dynamicSql(sql1)#,#use('sql')#
     @}
     FROM `user`
+    
+    
