@@ -15,5 +15,5 @@ public interface UserRepository extends BaseMapper<User> {
 
     User findById(@Param("id") String id);
 
-    List<User> findAll(@Param("sql") String sql);
+    List<User> findAll();
 }

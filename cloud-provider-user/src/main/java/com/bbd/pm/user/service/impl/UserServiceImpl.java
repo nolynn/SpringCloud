@@ -34,6 +34,6 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<User> findAll() {
 //        String sql = "id,real_name,user_name,password";
-        return userRepository.findAll(null);
+        return userRepository.findAll();
     }
 }

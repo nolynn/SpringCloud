@@ -6,17 +6,14 @@ findById
 
 sql
 ===
-id,real_name,user_name,password
+    id,real_name,user_name,password
 
 findAll
 ===
 *查找所有用户
 
-    @var sql1 = "id,real_name,user_name,password";
     SELECT 
     @pageTag(){
-        #db.dynamicSql(sql1)#,#use('sql')#
+        #globalUse("dao.base.sqlBase")#
     @}
-    FROM `user`
-    
-    
+    FROM user
