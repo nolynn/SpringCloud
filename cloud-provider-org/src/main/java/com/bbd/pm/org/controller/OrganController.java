@@ -69,4 +69,19 @@ public class OrganController {
         }
         return result;
     }
+
+    @GetMapping("/user/addUser/{id}/{username}/{password}")
+    public BaseResponse<User> list(@PathVariable String id, @PathVariable String username, @PathVariable String password) {
+        BaseResponse result = new BaseResponse<>();
+        try {
+            User user = new User();
+            user.setId(id).setUserName(username).setPassword(password);
+             userService.addUser(user);
+            result.setSuccess(true).setData("增加成功!").setTotalCount(1);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            result.setSuccess(false).setLogAndErrMsg(ex.getMessage());
+        }
+        return result;
+    }
 }

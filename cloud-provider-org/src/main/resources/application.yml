@@ -8,13 +8,7 @@ eureka:
   instance:
     hostname: localhost
     instance-id: cloud-provider-org:7001
-    prefer-ip-address: true
-# mybatis配置文件开启
-mybatis:
-  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
-  type-aliases-package: com.atguigu.springcloud.entities    # 所有Entity别名类所在包
-  mapper-locations:
-  - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
+    prefer-ip-address: true                       # mapper映射文件
 
 
 
@@ -24,9 +18,13 @@ spring:
     name: cloud-provider-org
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/microuser
     username: root
     password: root
+mybatis-plus:
+    config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
+    type-aliases-package: com.atguigu.springcloud.entities    # 所有Entity别名类所在包
+    mapper-locations: classpath:mybatis/mapper/**/*.xml
 
 
