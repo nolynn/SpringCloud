@@ -1,0 +1,17 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka8761.com:8761/eureka/
+server:
+  port: 8769
+spring:
+  application:
+    name: cloud-zuul
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: cloud-provider-user
+    api-b:
+      path: /api-b/**
+      serviceId: cloud-provider-org
