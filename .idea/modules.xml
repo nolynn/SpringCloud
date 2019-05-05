@@ -7,10 +7,12 @@
       <module fileurl="file://$PROJECT_DIR$/cloud-eureka/cloud-eureka.iml" filepath="$PROJECT_DIR$/cloud-eureka/cloud-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-eureka-8762/cloud-eureka-8762.iml" filepath="$PROJECT_DIR$/cloud-eureka-8762/cloud-eureka-8762.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-eureka-8763/cloud-eureka-8763.iml" filepath="$PROJECT_DIR$/cloud-eureka-8763/cloud-eureka-8763.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-feign/cloud-feign.iml" filepath="$PROJECT_DIR$/cloud-feign/cloud-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-provider-org/cloud-provider-org.iml" filepath="$PROJECT_DIR$/cloud-provider-org/cloud-provider-org.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-provider-user/cloud-provider-user.iml" filepath="$PROJECT_DIR$/cloud-provider-user/cloud-provider-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-provider-user-8002/cloud-provider-user-8002.iml" filepath="$PROJECT_DIR$/cloud-provider-user-8002/cloud-provider-user-8002.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-provider-user-8003/cloud-provider-user-8003.iml" filepath="$PROJECT_DIR$/cloud-provider-user-8003/cloud-provider-user-8003.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-zuul/cloud-zuul.iml" filepath="$PROJECT_DIR$/cloud-zuul/cloud-zuul.iml" />
       <module fileurl="file://$PROJECT_DIR$/springCloud.iml" filepath="$PROJECT_DIR$/springCloud.iml" />
     </modules>
   </component>

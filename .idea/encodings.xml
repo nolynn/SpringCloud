@@ -7,10 +7,11 @@
     <file url="file://$PROJECT_DIR$/cloud-eureka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-eureka-8762" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-eureka-8763" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-provider-org" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-provider-user" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-provider-user-8002" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-provider-user-8003" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud-ribbon" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-zuul" charset="UTF-8" />
   </component>
 </project>
